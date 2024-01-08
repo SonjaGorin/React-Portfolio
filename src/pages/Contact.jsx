@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { validateEmail } from "../utils/validateEmail";
 
 function Form() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [errorMessage, setErrorMessage] = useState("");
   
     const handleInputChange = (e) => {
 
@@ -20,6 +22,14 @@ function Form() {
   
     const handleFormSubmit = (e) => {
         e.preventDefault();
+
+        if (!validateEmail(email)) {
+            setErrorMessage("Please enter a valid email address.");
+            return;
+        } else {
+            setErrorMessage("");
+        };
+
         setName("");
         setEmail("");
         setMessage("");
@@ -56,6 +66,11 @@ function Form() {
                     Submit
                 </button>
             </form>
+            {errorMessage && (
+                <div>
+                    <p className="error-text">{errorMessage}</p>
+                </div>
+            )}
         </div>
     );
 }
