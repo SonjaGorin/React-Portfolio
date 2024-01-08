@@ -1,7 +1,13 @@
+import React from "react";
+import AvatarImage from "../../images/avatar.png";
+
 export default function AboutMe() {
     return (
         <div>
             <h1>About Me</h1>
+            <div>
+                <img src={AvatarImage} alt="Sonja Gorin avatar photo."></img>
+            </div>
             <p>
                 Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
                 Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
