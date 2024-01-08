@@ -12,7 +12,7 @@ function App() {
       <Outlet />
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
