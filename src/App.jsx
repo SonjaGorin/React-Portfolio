@@ -9,7 +9,9 @@ function App() {
     <>
       <Header />
       <Navbar />
-      <Outlet />
+      <main className="mx-3">
+        <Outlet />
+      </main>
       <Footer />
     </>
   );

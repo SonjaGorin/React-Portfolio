@@ -4,8 +4,8 @@ function Navbar() {
     const currentPage = useLocation().pathname;
 
     return (
-        <ul>
-            <li>
+        <ul className="nav nav-tabs">
+            <li className="nav-item">
             <Link
                 to="/"
                 className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
@@ -13,7 +13,7 @@ function Navbar() {
                 About Me
             </Link>
             </li>
-            <li>
+            <li className="nav-item">
                 <Link
                     to="/Portfolio"
                     className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
@@ -21,7 +21,7 @@ function Navbar() {
                     Portfolio
                 </Link>
             </li>
-            <li>
+            <li className="nav-item">
                 <Link
                     to="/Contact"
                     className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
@@ -29,7 +29,7 @@ function Navbar() {
                     Contact
                 </Link>
             </li>
-            <li>
+            <li className="nav-item">
                 <Link
                     to="/Resume"
                     className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
