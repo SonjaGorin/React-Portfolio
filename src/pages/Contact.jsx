@@ -11,10 +11,6 @@ function Form() {
 
         const { name, value } = e.target;
 
-        if (value === "") {
-            setErrorMessage(`The ${name} field is required.`);
-        }
-
         if (name === "name") {
             return setName(value)
         }  else if (name === "email") {
@@ -23,16 +19,25 @@ function Form() {
             return setMessage(value)
         }
     };
+
+    const blurFunction = (e) => {
+        const { name, value } = e.target;
+        if (value === "") {
+            setErrorMessage(`The ${name} field is required.`);
+            return;
+        }
+        setErrorMessage("");
+    }
   
     const handleFormSubmit = (e) => {
         e.preventDefault();
 
         const form = e.target
 
-        if (form.name.value === "" || form.email.value === "" || form.message.value === "") {
+        if (!form.name.value || !form.email.value || !form.message.value) {
             setErrorMessage("Please fill up all fields.");
             return;
-        } 
+        }
         
         if (!validateEmail(email)) {
             setErrorMessage("Please enter a valid email address.");
@@ -42,6 +47,7 @@ function Form() {
         setName("");
         setEmail("");
         setMessage("");
+        setErrorMessage("Form successfully submitted!");
     };
 
     return (
@@ -56,6 +62,7 @@ function Form() {
                     value={fullName}
                     name="name"
                     onChange={handleInputChange}
+                    onBlur={blurFunction}
                     type="text"
                     placeholder="first and last name"
                     />
@@ -66,6 +73,7 @@ function Form() {
                     value={email}
                     name="email"
                     onChange={handleInputChange}
+                    onBlur={blurFunction}
                     type="text"
                     placeholder="email"
                     />
@@ -76,6 +84,7 @@ function Form() {
                     value={message}
                     name="message"
                     onChange={handleInputChange}
+                    onBlur={blurFunction}
                     type="text"
                     placeholder="message"
                     />
