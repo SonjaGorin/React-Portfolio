@@ -9,12 +9,11 @@ export default function AboutMe() {
                 <img src={AvatarImage} alt="Sonja Gorin avatar photo."></img>
             </div>
             <p>
-                Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-                Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-                mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-                lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-                imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-                in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+                Hello! I'm a full stack software developer with a background in education. 
+                I have a certificate in full stack development from Carleton University bootcamp.
+                My two Bachelor's degrees and experience working as a teacher gave me very valuable knowledge and ability to learn quickly and efficiently,
+                which have shown to be necessary skills throughout my course. I am very excited to continue utilizing my newly obtained 
+                expertize as a MERN stack developer.
             </p>
         </div>
     );
