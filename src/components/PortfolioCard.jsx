@@ -1,7 +1,9 @@
 function PortfolioCard() {
     return(
         <div>
-
+            <div>
+                
+            </div>
         </div>
     );
 }
