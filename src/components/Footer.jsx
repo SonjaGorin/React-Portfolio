@@ -5,24 +5,24 @@ import TwitterImage from "../../images/twitter-logo-transparent.png";
 
 function Footer() {
     return (
-      <header className="footer">
+      <footer className="footer">
         <h1>Footer</h1>
         <div className="pop-on-hover">
-            <a href="https://github.com/SonjaGorin">
+            <a href="https://github.com/SonjaGorin" target="_blank">
                 <img src={GitHubImage} alt="GitHub logo."></img>
             </a>
         </div>
         <div>
-            <a href="https://ca.linkedin.com/">
+            <a href="https://ca.linkedin.com/" target="_blank">
                 <img src={LinkedInImage} alt="Linked In logo."></img>
             </a>
         </div>
         <div>
-            <a href="https://twitter.com/?lang=en">
+            <a href="https://twitter.com/?lang=en" target="_blank">
                 <img src={TwitterImage} alt="Twitter/X logo."></img>
             </a>
         </div>
-      </header>
+      </footer>
     );
   }
   
