@@ -1,7 +1,11 @@
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'bootstrap-css-only/css/bootstrap.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+
 
 import App from "./App";
 import AboutMe from "./pages/AboutMe";
