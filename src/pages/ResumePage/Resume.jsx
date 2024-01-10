@@ -13,7 +13,7 @@ export default function Resume() {
             </a>
             <div className="proficiencies">
                 <div className="front-end-div">
-                    <h2>Front-end Proficiencies</h2>
+                    <h4>Front-end Proficiencies</h4>
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -25,7 +25,7 @@ export default function Resume() {
                     </ul>
                 </div>
                 <div>
-                    <h2>Back-end Proficiencies</h2>
+                    <h4>Back-end Proficiencies</h4>
                     <ul>
                         <li>APIs</li>
                         <li>NodeJS</li>
