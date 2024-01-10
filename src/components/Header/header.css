@@ -1,0 +1,9 @@
+.style-nav {
+    background: #8e2735;
+}
+
+.under-name,
+.name,
+.item {
+    color: rgb(248, 225, 121);
+}

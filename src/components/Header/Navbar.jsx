@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import "./header.css"
 
 function Navbar() {
     const currentPage = useLocation().pathname;
@@ -8,7 +9,7 @@ function Navbar() {
             <li className="nav-item">
             <Link
                 to="/"
-                className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+                className={currentPage === '/' ? 'nav-link active item' : 'nav-link item'}
             >
                 About Me
             </Link>
@@ -16,7 +17,7 @@ function Navbar() {
             <li className="nav-item">
                 <Link
                     to="/Portfolio"
-                    className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
+                    className={currentPage === '/Portfolio' ? 'nav-link active item' : 'nav-link item'}
                 >
                     Portfolio
                 </Link>
@@ -24,7 +25,7 @@ function Navbar() {
             <li className="nav-item">
                 <Link
                     to="/Contact"
-                    className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+                    className={currentPage === '/Contact' ? 'nav-link active item' : 'nav-link item'}
                 >
                     Contact
                 </Link>
@@ -32,7 +33,7 @@ function Navbar() {
             <li className="nav-item">
                 <Link
                     to="/Resume"
-                    className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
+                    className={currentPage === '/Resume' ? 'nav-link active item' : 'nav-link item'}
                 >
                     Resume
                 </Link>
