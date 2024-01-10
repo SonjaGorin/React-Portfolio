@@ -1,0 +1,12 @@
+.footer {
+    background: #8e2735;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.fa-github, 
+.fa-linkedin,
+.fa-twitter {
+    margin: 0px 20px 0px 20px;
+}
