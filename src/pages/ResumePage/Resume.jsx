@@ -1,13 +1,14 @@
 import React from "react";
-import ResumeFile from "../../images/resume.pdf";
+import ResumeFile from "../../../images/resume.pdf";
+import "./Resume.css"
 
 export default function Resume() {
     return (
-        <div>
+        <div className="resume-page">
             <h1>Resume</h1>
             <h2>Click on the button to download my resume</h2>
             <a href={ResumeFile} download>
-                <button>
+                <button className="resume-bttn">
                     Resume
                 </button>
             </a>
