@@ -10,6 +10,7 @@ h1 {
 
 h2 {
     font-size: 20px;
+    text-decoration: underline;
 }
 
 .resume-bttn {
@@ -21,4 +22,17 @@ h2 {
     font-weight: bold;
     background:  rgb(248, 225, 121);
     margin-bottom: 40px;
+}
+
+.proficiencies {
+    display: flex;
+}
+
+.front-end-div {
+    margin-right: 100px;
+}
+
+.download-text {
+    font-style: italic;
+    font-size: 15px;
 }
