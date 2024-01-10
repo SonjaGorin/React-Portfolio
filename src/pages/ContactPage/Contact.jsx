@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { validateEmail } from "../utils/validateEmail";
+import { validateEmail } from "../../utils/validateEmail";
+import "./Contact.css"
 
 function Form() {
     const [fullName, setName] = useState("");
@@ -51,55 +52,53 @@ function Form() {
     };
 
     return (
-        <div className="">
+        <div className="contact-page">
             <h1>
                 Contact
             </h1>
             <form className="form" onSubmit={handleFormSubmit}>
-                <div>
+                <div className="name-input">
                     <label>Name</label>
                     <input
-                    value={fullName}
-                    name="name"
-                    onChange={handleInputChange}
-                    onBlur={blurFunction}
-                    type="text"
-                    placeholder="first and last name"
+                        value={fullName}
+                        name="name"
+                        onChange={handleInputChange}
+                        onBlur={blurFunction}
+                        type="text"
                     />
                 </div>
-                <div>
+                <div className="email-input">
                     <label>Email</label>
                     <input
-                    value={email}
-                    name="email"
-                    onChange={handleInputChange}
-                    onBlur={blurFunction}
-                    type="text"
-                    placeholder="email"
+                        value={email}
+                        name="email"
+                        onChange={handleInputChange}
+                        onBlur={blurFunction}
+                        type="text"
                     />
                 </div>
-                <div>
-                    <label>Message</label>
+                <div className="message-input">
+                    <label >Message</label>
                     <input
-                    value={message}
-                    name="message"
-                    onChange={handleInputChange}
-                    onBlur={blurFunction}
-                    type="text"
-                    placeholder="message"
+                        value={message}
+                        name="message"
+                        onChange={handleInputChange}
+                        onBlur={blurFunction}
+                        type="text"
+                        className="message-field"
                     />
                 </div>
+                {errorMessage && (
+                    <div>
+                        <p className="error-text">{errorMessage}</p>
+                    </div>
+                )}
                 <div>
-                    <button type="submit">
+                    <button type="submit" className="submit-bttn">
                         Submit
                     </button>
                 </div>
             </form>
-            {errorMessage && (
-                <div>
-                    <p className="error-text">{errorMessage}</p>
-                </div>
-            )}
         </div>
     );
 }

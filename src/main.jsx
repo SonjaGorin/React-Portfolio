@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import App from "./App";
 import AboutMe from "./pages/AboutMePage/AboutMe";
-import Contact from "./pages/Contact";
+import Contact from "./pages/ContactPage/Contact";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 
