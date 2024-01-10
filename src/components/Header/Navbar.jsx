@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import "./header.css"
+import "./Header.css"
 
 function Navbar() {
     const currentPage = useLocation().pathname;
