@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 import App from "./App";
-import AboutMe from "./pages/AboutMe";
+import AboutMe from "./pages/AboutMePage/AboutMe";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";

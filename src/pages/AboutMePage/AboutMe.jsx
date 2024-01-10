@@ -1,12 +1,12 @@
-import React from "react";
-import AvatarImage from "../../images/avatar.png";
+import AvatarImage from "../../../images/avatar.png";
+import "./AboutMe.css"
 
 export default function AboutMe() {
     return (
         <div>
             <h1>About Me</h1>
             <div>
-                <img src={AvatarImage} alt="Sonja Gorin avatar photo."></img>
+                <img className="avatar" src={AvatarImage} alt="Sonja Gorin avatar photo."></img>
             </div>
             <p>
                 Hello! I'm a full stack software developer with a background in education. 

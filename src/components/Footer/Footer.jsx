@@ -9,7 +9,7 @@ import "./Footer.css"
 
 function Footer() {
     return (
-        <MDBFooter className='footer text-center text-white'>
+        <MDBFooter className='footer sticky-bottom text-center text-white'>
             <MDBContainer className='pt-2'>
                 <section>
                     <MDBBtn
