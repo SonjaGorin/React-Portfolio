@@ -1,5 +1,6 @@
 import "./PortfolioCard.css"
 
+// renderin a portfolio card that uses props from portfolio page
 export default function PortfolioCard(props) {
     return(
         <div className="portfolio-card">

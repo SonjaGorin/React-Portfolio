@@ -7,7 +7,8 @@ import {
 
 import "./Footer.css"
 
-function Footer() {
+// rendering footer using bootstrap for react
+export default function Footer() {
     return (
         <MDBFooter className='footer sticky-bottom text-center text-white'>
             <MDBContainer className='pt-2'>
@@ -53,5 +54,3 @@ function Footer() {
         </MDBFooter>
     );
 }
-  
-export default Footer;

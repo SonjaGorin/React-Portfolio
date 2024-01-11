@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import "./Header.css"
 
-function Navbar() {
+export default function Navbar() {
     const currentPage = useLocation().pathname;
 
     return (
@@ -9,6 +9,7 @@ function Navbar() {
             <li className="nav-item">
             <Link
                 to="/"
+                // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
                 className={currentPage === '/' ? 'nav-link active item' : 'nav-link item'}
             >
                 About Me
@@ -41,5 +42,3 @@ function Navbar() {
         </ul>
     )
 }
-
-export default Navbar;
