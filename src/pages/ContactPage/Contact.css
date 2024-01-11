@@ -24,11 +24,11 @@ h1 {
 .submit-bttn {
     height: 40px;
     width: 120px;
-    border: 3px;
+    border: 4px;
     border-color:#8e2735;
     border-style: solid;
     font-weight: bold;
-    background:  rgb(248, 225, 121);
+    background:  rgb(243, 214, 85);
     margin-bottom: 20px;
 }
 
