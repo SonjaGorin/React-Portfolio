@@ -1,9 +1,9 @@
-import React from "react";
+import "./PortfolioCard.css"
 
 export default function PortfolioCard(props) {
     return(
-        <div>
-            <img src={props.img}></img>
+        <div className="portfolio-card">
+            <img className="portfolio-image" src={props.img}></img>
             <a href={props.app}>PLACEHOLDER</a>
             <a href={props.git}>placeholder</a>
         </div>

@@ -1,0 +1,13 @@
+.portfolio-image {
+    height: 350px;
+    width: 450px;
+}
+
+.portfolio-page {
+    margin: 30px 120px 0px 80px;
+    min-height: 750px;
+}
+
+.two-cards {
+    display: flex;
+}
