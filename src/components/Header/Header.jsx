@@ -1,5 +1,5 @@
 import Navbar from "./Navbar"
-import "./Header.css"
+import "./header.css"
 
 // rendering header with component Navbar
 export default function Header() {
