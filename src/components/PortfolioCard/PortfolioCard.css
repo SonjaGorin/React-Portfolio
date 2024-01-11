@@ -1,6 +1,8 @@
 .portfolio-image {
     height: 350px;
     width: 550px;
+    border: 6px;
+    border-style: solid;
 }
 
 .portfolio-page {
@@ -10,4 +12,53 @@
 
 .two-cards {
     display: flex;
+}
+
+.portfolio-card {
+    position: relative;
+    margin: 30px
+}
+
+.project-links {
+    /* position: absolute;
+    bottom: 50px;
+    left: 4px; */
+}
+
+.project-anchor {
+    position: absolute;
+    bottom: 50px;
+    left: 4px;
+    margin-bottom: 20px;
+    color: rgb(248, 225, 121);
+    text-decoration: none;
+    background:#8e2735;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    padding: 7px 17px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-anchor:hover {
+    color: rgb(255, 196, 0);
+    text-decoration: none;
+}
+
+.git-anchor {
+    position: absolute;
+    bottom: 21px;
+    left: 5px;
+    color: black;
+    background: rgb(248, 225, 121);
+    padding: 0px 7px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+.git-anchor:hover {
+    background: rgb(255, 196, 0);
+    color: black;
 }
