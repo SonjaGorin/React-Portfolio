@@ -1,10 +1,10 @@
 import PortfolioCard from "../components/PortfolioCard/PortfolioCard";
-import CalculatorImage from "../../images/calculator.jpg";
-import JavaScriptImage from "../../images/JavaScript.jpg";
-import LaptopImage from "../../images/laptop.jpg";
-import LedWallImage from "../../images/led-wall.png";
-import PastelPuzzlesImage from "../../images/pastel-puzzles.jpg";
-import RunBuddyImage from "../../images/run-buddy.png";
+import WorkDayScheduler from "../../images/work-day-scheduler-screenshot-01.png";
+import WeatherDashboard from "../../images/weather-dashboard-screenshot-03.png";
+import Cravings from "../../images/cravings-screenshot.png";
+import TechBlog from "../../images/tech-blog-screenshot-03.png";
+import NoteTaker from "../../images/Note-Taker-Screenshot-05.png";
+import PasswordGenerator from "../../images/password-generator-screenshot-03.png";
 import "../components/PortfolioCard/PortfolioCard.css";
 
 
@@ -15,16 +15,16 @@ export default function Portfolio() {
             <h1>Portfolio</h1>
             <div>
                 <div className="two-cards">
-                    <PortfolioCard img={CalculatorImage} app={"https://sonjagorin.github.io/Work-Day-Scheduler/"} git={"https://github.com/SonjaGorin/Work-Day-Scheduler"}/>
-                    <PortfolioCard img={JavaScriptImage} app={"https://sonjagorin.github.io/Weather-Dashboard/"} git={"https://github.com/SonjaGorin/Weather-Dashboard"}/>
+                    <PortfolioCard img={WorkDayScheduler} app={"https://sonjagorin.github.io/Work-Day-Scheduler/"} git={"https://github.com/SonjaGorin/Work-Day-Scheduler"}/>
+                    <PortfolioCard img={WeatherDashboard} app={"https://sonjagorin.github.io/Weather-Dashboard/"} git={"https://github.com/SonjaGorin/Weather-Dashboard"}/>
                 </div>
                 <div className="two-cards">
-                    <PortfolioCard img={LaptopImage} app={"https://craving-510bbff9dcfd.herokuapp.com/"} git={"https://github.com/SonjaGorin/Cravings"}/>
-                    <PortfolioCard img={LedWallImage} app={"https://technology-blog-sg-b51f56d78026.herokuapp.com/"} git={"https://github.com/SonjaGorin/Tech-Blog"}/>
+                    <PortfolioCard img={Cravings} app={"https://craving-510bbff9dcfd.herokuapp.com/"} git={"https://github.com/SonjaGorin/Cravings"}/>
+                    <PortfolioCard img={TechBlog} app={"https://technology-blog-sg-b51f56d78026.herokuapp.com/"} git={"https://github.com/SonjaGorin/Tech-Blog"}/>
                 </div>
                 <div className="two-cards">
-                    <PortfolioCard img={PastelPuzzlesImage} app={"https://murmuring-beyond-80827-82186790f589.herokuapp.com/"} git={"https://github.com/SonjaGorin/Note-Taker?tab=readme-ov-file"}/>
-                    <PortfolioCard img={RunBuddyImage} app={"https://sonjagorin.github.io/Password-Generator/"} git={"https://github.com/SonjaGorin/Password-Generator"}/>
+                    <PortfolioCard img={NoteTaker} app={"https://murmuring-beyond-80827-82186790f589.herokuapp.com/"} git={"https://github.com/SonjaGorin/Note-Taker?tab=readme-ov-file"}/>
+                    <PortfolioCard img={PasswordGenerator} app={"https://sonjagorin.github.io/Password-Generator/"} git={"https://github.com/SonjaGorin/Password-Generator"}/>
                 </div>
             </div>
         </div>
