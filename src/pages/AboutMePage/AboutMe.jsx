@@ -5,6 +5,7 @@ export default function AboutMe() {
     return (
         <div className="about-page">
             <h1>About Me</h1>
+            {/* setting up an image */}
             <div>
                 <img className="avatar" src={AvatarImage} alt="Sonja Gorin avatar photo."></img>
             </div>

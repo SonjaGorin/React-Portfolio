@@ -7,8 +7,7 @@ import NoteTaker from "../../images/Note-Taker-Screenshot-05.png";
 import PasswordGenerator from "../../images/password-generator-screenshot-03.png";
 import "../components/PortfolioCard/PortfolioCard.css";
 
-
-
+// portfolio page that renders portfolio card using props
 export default function Portfolio() {
     return (
         <div className="portfolio-page">

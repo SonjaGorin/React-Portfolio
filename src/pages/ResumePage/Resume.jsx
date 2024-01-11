@@ -6,6 +6,7 @@ export default function Resume() {
         <div className="resume-page">
             <h1>Resume</h1>
             <h3 className="download-text">Click on the button to download my resume</h3>
+            {/* button that let's you download resume when clicked */}
             <a href={ResumeFile} download>
                 <button className="resume-bttn">
                     Resume
